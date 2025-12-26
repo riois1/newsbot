@@ -50,9 +50,15 @@ import {
  */
 
 // Firebase 환경 설정 (규칙 준수)
-const firebaseConfig = typeof __firebase_config !== 'undefined' 
-  ? JSON.parse(__firebase_config) 
-  : { apiKey: "" };
+const firebaseConfig = {
+  apiKey: "AIzaSyBZW2aYSpge5WhB1MnjB_dcxL2zlTbylEs",
+  authDomain: "kwnb-292e4.firebaseapp.com",
+  projectId: "kwnb-292e4",
+  storageBucket: "kwnb-292e4.firebasestorage.app",
+  messagingSenderId: "334663791620",
+  appId: "1:334663791620:web:0d4a1d22f7e688f9737151",
+  measurementId: "G-XW9D8KSTG9"
+};
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
